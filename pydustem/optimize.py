@@ -6,6 +6,7 @@ import numpy as np
 import scipy.optimize
 import scipy.interpolate
 import run
+import filtercon
 
 def counter(start=1):
     '''counter for repeatedly-executed DustEM'''
