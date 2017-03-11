@@ -106,7 +106,7 @@ def display_fitting_result(): pass
 def adjust_sed(bands, x, y):
     '''calculate averaged/interpolated intensity'''
     if isinstance(bands[0], str):
-        return filter.weighted_mean(bands, x, y)
+        return filtercon.weighted_mean(bands, x, y)
     else:
         tck = scipy.interpolate.splrep(x, y)
         return scipy.interpolate.splev(bands, tck)
