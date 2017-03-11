@@ -19,7 +19,7 @@ FILTER_PATH = {
                  'F65' : 'f65.fad', 'F90' : 'f90.fad',  'F140': 'f140.fad',  'F160' : 'f160.fad' # AKARI/FIS
                  'I12' : 'i12.fad', 'I25' : 'i25.fad',  'I60' : 'i60.fad',   'I100' : 'i100.fad' # IRAS 
                  'M24' : 'm24.fad', 'M70' : 'm70.fad',  'M160': 'm160.fad',  # Spitzer/MIPS
-                 'P350': 'p350.fad','P550': 'p550.fad'                       # Planck/HFI
+                 'P350': 'p350.fad','P550': 'p550.fad',                       # Planck/HFI
               }
 
 '''Grain parameters'''
