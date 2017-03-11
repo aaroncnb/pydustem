@@ -1,7 +1,7 @@
 import os
 
 '''DustEM preferences'''
-DUSTEM_DIR = '/work1/users/aaronb/Softbrary/dustem/'
+DUSTEM_DIR = '/work1/users/aaronb/Softbrary/dustem4.0_web/'
 OUT_DIR = os.path.join(DUSTEM_DIR, 'out')
 RES_FILE = os.path.join(OUT_DIR, 'SED.RES')
 GRAIN = os.path.join(DUSTEM_DIR, 'data/GRAIN.DAT')
