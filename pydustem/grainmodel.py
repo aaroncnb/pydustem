@@ -35,7 +35,7 @@ def MC10(g0=1.000, factor=None, umax=1e6, gamma=0.0, alpha=2.0):
                               'aSil': MC10_aSil(mass['aSil'])
                             }),
                             umax, gamma, alpha)
-
+# DL07 PAH component .DAT files are renamed in DustEM 4.0... these should be fixed.
 def DL07_PAH0(mass=5.4000E-04):
     return Grain('PAH0_DL07', 10, ('mix','logn'), mass, 2.2400E+00, 3.1000E-08, 1.2000E-07,
                  3.5000E-08, 4.0000E-01)
