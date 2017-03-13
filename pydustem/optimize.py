@@ -72,7 +72,8 @@ def fitting_mass(bands, values, grain_composition, cache,
     if var_umax: bounds.append(tuple(np.array([4,10])-log10(grain_composition.umax)))
     if var_alpha: bounds.append((1.01/grain_composition.alpha,4./grain_composition.alpha))
 
-    x = scipy.optimize.fmin_slsqp(func, x0, bounds=bounds+[(1e-5,100)]*gnum, epsilon=1e-5)
+    #x = scipy.optimize.fmin_slsqp(func, x0, bounds=bounds+[(1e-5,100)]*gnum, epsilon=1e-5)
+    x = scipy.optimize.fmin_slsqp(func, x0, bounds=bounds+[(1e-5,100)]*gnum, epsilon=1e-1)
 
     newgc = grain_composition.copy()
     
